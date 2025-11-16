@@ -460,24 +460,37 @@
             </div>
             
             <div class="map-area">
-                <div class="map-container">
-                    <!-- Thay đổi đường dẫn ảnh bản đồ -->
-                    <img src="D:\so doi\images\Frame 1.png" alt="Bản đồ bệnh viện" id="main-map">
-                    <svg id="route-overlay" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg>
-                    
-                    <!-- Welcome message mặc định -->
-                    <div class="welcome-message" id="welcomeMessage">
-                        <div class="welcome-icon">🗺️</div>
-                        <h3>Chào mừng đến với Bệnh viện</h3>
-                        <p>Vui lòng chọn điểm đến từ danh sách bên trái để xem hướng dẫn đường đi chi tiết.</p>
-                    </div>
-                    
-                    <!-- Điều chỉnh vị trí "Bạn đang ở đây" -->
-                    <div class="current-location">
-                        📍 Bạn đang ở đây
-                    </div>
-                </div>
-            </div>
+    <div class="map-container">
+        <!-- CHỌN MỘT TRONG CÁC ĐƯỜNG DẪN SAU: -->
+        
+        <!-- Tùy chọn 1: Nếu ảnh nằm trong thư mục 'images' cùng cấp với file HTML -->
+        <img src="images/Frame%201.png" alt="Bản đồ bệnh viện" id="main-map">
+        
+        <!-- Tùy chọn 2: Nếu ảnh nằm trong thư mục 'so doi/images' -->
+        <!-- <img src="so%20doi/images/Frame%201.png" alt="Bản đồ bệnh viện" id="main-map"> -->
+        
+        <!-- Tùy chọn 3: Sử dụng base64 encoded image như placeholder -->
+        <!-- <div class="map-placeholder" id="map-placeholder">
+            <div class="map-placeholder-icon">🗺️</div>
+            <h3>Sơ đồ bệnh viện</h3>
+            <p>Đang tải bản đồ...</p>
+        </div> -->
+        
+        <svg id="route-overlay" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg>
+        
+        <!-- Welcome message mặc định -->
+        <div class="welcome-message" id="welcomeMessage">
+            <div class="welcome-icon">🗺️</div>
+            <h3>Chào mừng đến với Bệnh viện</h3>
+            <p>Vui lòng chọn điểm đến từ danh sách bên trái để xem hướng dẫn đường đi chi tiết.</p>
+        </div>
+        
+        <!-- Điều chỉnh vị trí "Bạn đang ở đây" -->
+        <div class="current-location">
+            📍 Bạn đang ở đây
+        </div>
+    </div>
+</div>
         </div>
 
         <div class="footer">
@@ -633,3 +646,4 @@
     </script>
 </body>
 </html>
+
