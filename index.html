@@ -211,62 +211,61 @@
 
         /* Welcome Message */
        .welcome-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.95);
-    padding: 20px 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border: 2px solid var(--secondary);
-    z-index: 15;
-    backdrop-filter: blur(10px);
-    max-width: 350px;
-}
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 2px solid var(--secondary);
+            z-index: 15;
+            backdrop-filter: blur(10px);
+            max-width: 350px;
+        }
 
-.welcome-message h3 {
-    color: var(--primary);
-    margin-bottom: 10px;
-    font-size: 1.3em;
-}
+        .welcome-message h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
 
-.welcome-message p {
-    color: var(--text-light);
-    line-height: 1.5;
-    margin-bottom: 0;
-    font-size: 0.9em;
-}
+        .welcome-message p {
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-bottom: 0;
+            font-size: 0.9em;
+        }
 
-.welcome-icon {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    display: block;
-}
+        .welcome-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
+        }
 
         /* Markers */
-       .current-location {
-    position: absolute;
-    background: linear-gradient(135deg, var(--accent), #c0392b);
-    color: white;
-    padding: 14px 22px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 700;
-    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
-    z-index: 20;
-    border: 3px solid white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    animation: pulse 2s infinite;
-    backdrop-filter: blur(5px);
-    /* Thêm thuộc tính mới để dễ điều chỉnh */
-    top: 65% !important; /* Di chuyển lên cao hơn từ 75% lên 65% */
-    left: 48% !important;
-    transform: translateY(-10px); /* Đẩy lên thêm một chút */
-}
+        .current-location {
+            position: absolute;
+            background: linear-gradient(135deg, var(--accent), #c0392b);
+            color: white;
+            padding: 14px 22px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
+            z-index: 20;
+            border: 3px solid white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: pulse 2s infinite;
+            backdrop-filter: blur(5px);
+            top: 65% !important;
+            left: 48% !important;
+            transform: translateY(-10px);
+        }
 
         .destination-marker {
             position: absolute;
@@ -309,11 +308,11 @@
         }
 
         .route-arrow {
-    fill: #e74c3c;
-    animation: fadeIn 0.5s ease-in-out 2.3s forwards;
-    opacity: 0;
-    filter: drop-shadow(0 3px 6px rgba(231, 76, 60, 0.4));
-}
+            fill: #e74c3c;
+            animation: fadeIn 0.5s ease-in-out 2.3s forwards;
+            opacity: 0;
+            filter: drop-shadow(0 3px 6px rgba(231, 76, 60, 0.4));
+        }
 
         @keyframes drawPath {
             to {
@@ -322,10 +321,9 @@
         }
 
         @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
         /* Footer */
         .footer {
@@ -463,21 +461,22 @@
             
             <div class="map-area">
                 <div class="map-container">
-    <img src="Frame%201%20(1).svg" alt="Bản đồ bệnh viện" id="main-map">
-    <svg id="route-overlay" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg>
-    
-    <!-- Welcome message mặc định -->
-    <div class="welcome-message" id="welcomeMessage">
-        <div class="welcome-icon">🗺️</div>
-        <h3>Chào mừng đến với Bệnh viện</h3>
-        <p>Vui lòng chọn điểm đến từ danh sách bên trái để xem hướng dẫn đường đi chi tiết.</p>
-    </div>
-    
-    <!-- Điều chỉnh vị trí "Bạn đang ở đây" lên cao hơn -->
-    <div class="current-location" style="top: 71% !important; left: 50% !important; transform: translateX(-50%) !important;">
-    📍 Bạn đang ở đây
-</div>
-</div>
+                    <!-- Thay đổi đường dẫn ảnh bản đồ -->
+                    <img src="D:\so doi\images\Frame 1.png" alt="Bản đồ bệnh viện" id="main-map">
+                    <svg id="route-overlay" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg>
+                    
+                    <!-- Welcome message mặc định -->
+                    <div class="welcome-message" id="welcomeMessage">
+                        <div class="welcome-icon">🗺️</div>
+                        <h3>Chào mừng đến với Bệnh viện</h3>
+                        <p>Vui lòng chọn điểm đến từ danh sách bên trái để xem hướng dẫn đường đi chi tiết.</p>
+                    </div>
+                    
+                    <!-- Điều chỉnh vị trí "Bạn đang ở đây" -->
+                    <div class="current-location">
+                        📍 Bạn đang ở đây
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -488,8 +487,8 @@
         </div>
     </div>
 
-   <script>
-        // Tọa độ thực tế của các khoa (bạn cần điều chỉnh cho khớp với bản đồ SVG)
+    <script>
+        // Tọa độ thực tế của các khoa (bạn cần điều chỉnh cho khớp với bản đồ PNG)
         const destinations = {
             'kham-benh': { x: 147, y: 363, name: 'Khoa Khám bệnh' },
             'kham-vip': { x: 659, y: 251, name: 'Khoa Khám VIP' },
@@ -500,6 +499,7 @@
         };
 
         let currentMarker = null;
+        let welcomeMessage = document.getElementById('welcomeMessage');
 
         document.querySelectorAll('.dest-btn').forEach(button => {
             button.addEventListener('click', function() {
@@ -510,112 +510,126 @@
                 
                 const destination = this.getAttribute('data-dest');
                 showRoute(destination);
+                
+                // Ẩn thông báo chào mừng khi chọn điểm đến
+                if (welcomeMessage) {
+                    welcomeMessage.style.display = 'none';
+                }
+            });
+        });
+
+        // Thêm chức năng tìm kiếm
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            document.querySelectorAll('.dest-btn').forEach(button => {
+                const buttonText = button.textContent.toLowerCase();
+                if (buttonText.includes(searchTerm)) {
+                    button.style.display = 'flex';
+                } else {
+                    button.style.display = 'none';
+                }
             });
         });
 
         function showRoute(destination) {
-    const overlay = document.getElementById('route-overlay');
-    overlay.innerHTML = '';
-    
-    if (currentMarker) {
-        currentMarker.remove();
-    }
-    
-    const dest = destinations[destination];
-    if (!dest) return;
-    
-    const startX = 400;
-    const startY = 450;
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    
-    let pathData = '';
-    
-    // XỬ LÝ TỪNG KHOA CỤ THỂ - ĐI THEO TRỤC
-    switch(destination) {
-        case 'kham-benh':
-            // Khoa Khám bệnh: đi thẳng lên RỒI SANG TRÁI (theo trục)
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        case 'kham-vip':
-            // Khoa Khám VIP: đi thẳng lên RỒI SANG PHẢI (theo trục)
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        case 'xet-nghiem':
-            // Khoa Xét nghiệm: đi lên rồi sang trái
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        case 'cdha':
-            // Khoa CDHA: đi lên rồi sang phải
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        case 'sieu-am':
-            // Khoa Siêu âm: đi lên rồi sang phải
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        case 'thuoc-bhyt':
-            // Quầy thuốc BHYT: đi lên rồi sang phải
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-            break;
-        default:
-            pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
-    }
-    
-    path.setAttribute('d', pathData);
-    path.setAttribute('class', 'route-path');
-    path.setAttribute('stroke', '#e74c3c');
-    path.setAttribute('stroke-width', '6');
-    path.setAttribute('stroke-dasharray', '1000');
-    path.setAttribute('stroke-dashoffset', '1000');
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke-linejoin', 'round');
-    
-    overlay.appendChild(path);
+            const overlay = document.getElementById('route-overlay');
+            overlay.innerHTML = '';
+            
+            if (currentMarker) {
+                currentMarker.remove();
+            }
+            
+            const dest = destinations[destination];
+            if (!dest) return;
+            
+            const startX = 400;
+            const startY = 450;
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            
+            let pathData = '';
+            
+            // XỬ LÝ TỪNG KHOA CỤ THỂ - ĐI THEO TRỤC
+            switch(destination) {
+                case 'kham-benh':
+                    // Khoa Khám bệnh: đi thẳng lên RỒI SANG TRÁI (theo trục)
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                case 'kham-vip':
+                    // Khoa Khám VIP: đi thẳng lên RỒI SANG PHẢI (theo trục)
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                case 'xet-nghiem':
+                    // Khoa Xét nghiệm: đi lên rồi sang trái
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                case 'cdha':
+                    // Khoa CDHA: đi lên rồi sang phải
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                case 'sieu-am':
+                    // Khoa Siêu âm: đi lên rồi sang phải
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                case 'thuoc-bhyt':
+                    // Quầy thuốc BHYT: đi lên rồi sang phải
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+                    break;
+                default:
+                    pathData = `M ${startX} ${startY} L ${startX} ${dest.y} L ${dest.x} ${dest.y}`;
+            }
+            
+            path.setAttribute('d', pathData);
+            path.setAttribute('class', 'route-path');
+            path.setAttribute('stroke', '#e74c3c');
+            path.setAttribute('stroke-width', '6');
+            path.setAttribute('stroke-dasharray', '1000');
+            path.setAttribute('stroke-dashoffset', '1000');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('stroke-linejoin', 'round');
+            
+            overlay.appendChild(path);
 
-    // Thêm mũi tên
-    // Thêm mũi tên - PHIÊN BẢN ĐẢM BẢO HOẠT ĐỘNG
-// Thêm mũi tên - PHIÊN BẢN ĐƠN GIẢN NHẤT
-// Thêm mũi tên - CHI TIẾT TỪNG KHOA
-setTimeout(() => {
-    const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-    const arrowSize = 12;
-    
-    let points;
-    
-    switch(destination) {
-        case 'kham-benh':
-        case 'xet-nghiem':
-        case 'cdha':
-            // ➡️ Mũi tên hướng TRÁI (các khoa bên TRÁI sơ đồ)
-            points = `${dest.x},${dest.y} ${dest.x + 20},${dest.y - 10} ${dest.x + 20},${dest.y + 10}`;
-            break;
-        case 'kham-vip':
-        case 'sieu-am':
-        case 'thuoc-bhyt':
-            // ⬅️ Mũi tên hướng PHẢI (các khoa bên PHẢI sơ đồ)
-            points = `${dest.x},${dest.y} ${dest.x - 20},${dest.y - 10} ${dest.x - 20},${dest.y + 10}`;
-            break;
-    }
-    
-    arrow.setAttribute('points', points);
-    arrow.setAttribute('fill', '#e74c3c');
-    arrow.setAttribute('stroke', '#c0392b');
-    arrow.setAttribute('stroke-width', '1');
-    
-    overlay.appendChild(arrow);
-    
-}, 1800);
+            // Thêm mũi tên
+            setTimeout(() => {
+                const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                const arrowSize = 12;
+                
+                let points;
+                
+                switch(destination) {
+                    case 'kham-benh':
+                    case 'xet-nghiem':
+                    case 'cdha':
+                        // ➡️ Mũi tên hướng TRÁI (các khoa bên TRÁI sơ đồ)
+                        points = `${dest.x},${dest.y} ${dest.x + 20},${dest.y - 10} ${dest.x + 20},${dest.y + 10}`;
+                        break;
+                    case 'kham-vip':
+                    case 'sieu-am':
+                    case 'thuoc-bhyt':
+                        // ⬅️ Mũi tên hướng PHẢI (các khoa bên PHẢI sơ đồ)
+                        points = `${dest.x},${dest.y} ${dest.x - 20},${dest.y - 10} ${dest.x - 20},${dest.y + 10}`;
+                        break;
+                }
+                
+                arrow.setAttribute('points', points);
+                arrow.setAttribute('fill', '#e74c3c');
+                arrow.setAttribute('stroke', '#c0392b');
+                arrow.setAttribute('stroke-width', '1');
+                
+                overlay.appendChild(arrow);
+                
+            }, 1800);
 
-    // Thêm marker
-    currentMarker = document.createElement('div');
-    currentMarker.className = 'destination-marker';
-    currentMarker.innerHTML = '🎯 ' + dest.name;
-    currentMarker.style.left = (dest.x / 800 * 100) + '%';
-    currentMarker.style.top = (dest.y / 600 * 100) + '%';
-    document.querySelector('.map-container').appendChild(currentMarker);
-    
-    console.log('Đang chỉ đường đến:', dest.name, 'với đường đi:', pathData);
-}
-
+            // Thêm marker
+            currentMarker = document.createElement('div');
+            currentMarker.className = 'destination-marker';
+            currentMarker.innerHTML = '🎯 ' + dest.name;
+            currentMarker.style.left = (dest.x / 800 * 100) + '%';
+            currentMarker.style.top = (dest.y / 600 * 100) + '%';
+            document.querySelector('.map-container').appendChild(currentMarker);
+            
+            console.log('Đang chỉ đường đến:', dest.name, 'với đường đi:', pathData);
+        }
     </script>
 </body>
 </html>
